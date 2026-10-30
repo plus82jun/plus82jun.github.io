@@ -1,4 +1,4 @@
-key,et_al,date,paperurl,note
-park2026nanostructured,yes,,,Scholar export lists 10 authors; the full list is longer
-oh2026bimodal,yes,,,Scholar export lists 10 authors; the full list is longer
-lee2026reliable,yes,,,Scholar export lists 10 authors; the full list is longer
+key,et_al,date,paperurl,note,authors
+park2026nanostructured,,,https://doi.org/10.1038/s41565-025-02092-y,Full author list (14) checked on the Nature page 2026-10-30,"Park, Nam-Yung; Park, Geon-Tae; Ryu, Ji-Hyun; Park, Seong-Eun; Kim, Jae-Ho; Lee, Seung-Yong; Choi, Junhyeok; Lee, Yong Min; Kim, Min Gyu; Lee, Heebeom; Cline, Joseph P.; Liu, Zhao; Jung, Hun-Gi; Sun, Yang-Kook"
+oh2026bimodal,,,https://doi.org/10.1021/acsenergylett.5c03923,Full author list (17) checked via Crossref record of the DOI 2026-10-30,"Oh, Hyeonseong; Jeong, Uigyeong; Choi, Junhyeok; Lim, Jaejin; Kim, Jun Tae; Shin, Hyeon-Ji; Im, Jong-yeon; Gong, Hyun-Woo; Ahn, Jae-Pyoung; Lee, Yong Min; Kim, Jongsoon; Mun, Junyoung; Chung, Kyung Yoon; Oh, Si Hyoung; Lee, Jong-Won; Lee, Sang-Young; Jung, Hun-Gi"
+lee2026reliable,,,https://doi.org/10.1002/adma.74035,Full author list (11) checked via Crossref record of the DOI 2026-10-30,"Lee, Yunho; Kwon, Yongjun; Noh, Juhyeong; Kang, Seok Hun; Kang, Kyubeen; Choi, Junhyeok; Lee, Young-Gi; Choi, Jaecheol; Jin, Hyeong Min; Lee, Yong Min; Kim, Ju Young"

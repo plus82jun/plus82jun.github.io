@@ -122,6 +122,9 @@ def main():
     for key, r, title, year in entries:
         ov = overrides.get(key, {})
         names, truncated = split_authors(r.get("Authors", ""))
+        if ov.get("authors"):
+            # Verified full author list ("Last, First; Last, First"); replaces the truncated export.
+            names, truncated = split_authors(ov["authors"])
         if ov.get("et_al", "").lower() in TRUTHY:
             truncated = True
         authors = ", ".join(names) + (", et al." if truncated else "")

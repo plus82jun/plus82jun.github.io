@@ -22,6 +22,7 @@ Each row starts with the paper key printed by the script (for example `park2026n
 | `date` | optional `YYYY-MM-DD` (inside the paper's year) to control ordering within a year |
 | `paperurl` | optional DOI or paper link; the theme labels it "Download Paper" |
 | `note` | free text for yourself; not used |
+| `authors` | optional verified full author list in Scholar format (`Last, First; Last, First`); replaces the exported list, so leave `et_al` empty when it is filled |
 
 The key is built as `<first author last name><year><first title word>`, so it can change if the
 title or first author changes in a later export. The script warns about override rows that no longer match.
