@@ -1,10 +1,10 @@
-key,et_al,date,paperurl,note,authors,accepted,sort_before
-choi2023phase,,,,Accepted date supplied by the author (2026-10-31),,2023-10-18,
-zou2024optimal,,,,Accepted 15 May 2024 per RSC article PDF,,2024-05-15,
-kim2025mechanical,,,,Accepted 2025-05-11 per Crossref assertion,,2025-05-11,
-lim2026digital,,,,"Accepted date unknown. Received 30 Jun 2025, revised 28 Oct 2025 (author), so accepted after 28 Oct 2025; author states it precedes the Nature Nanotechnology paper",,,park2026nanostructured
-park2026nanostructured,,,https://doi.org/10.1038/s41565-025-02092-y,Full author list (14) checked on the Nature page 2026-10-30; Accepted 30 Oct 2025 per Nature article page,"Park, Nam-Yung; Park, Geon-Tae; Ryu, Ji-Hyun; Park, Seong-Eun; Kim, Jae-Ho; Lee, Seung-Yong; Choi, Junhyeok; Lee, Yong Min; Kim, Min Gyu; Lee, Heebeom; Cline, Joseph P.; Liu, Zhao; Jung, Hun-Gi; Sun, Yang-Kook",2025-10-30,
-oh2026bimodal,,,https://doi.org/10.1021/acsenergylett.5c03923,Full author list (17) checked via Crossref record of the DOI 2026-10-30; Accepted date supplied by the author (2026-10-31),"Oh, Hyeonseong; Jeong, Uigyeong; Choi, Junhyeok; Lim, Jaejin; Kim, Jun Tae; Shin, Hyeon-Ji; Im, Jong-yeon; Gong, Hyun-Woo; Ahn, Jae-Pyoung; Lee, Yong Min; Kim, Jongsoon; Mun, Junyoung; Chung, Kyung Yoon; Oh, Si Hyoung; Lee, Jong-Won; Lee, Sang-Young; Jung, Hun-Gi",2026-01-13,
-kim2026dry,,,,Accepted date supplied by the author (2026-10-31),,2026-09-08,
-choi2026thermally,,,,Accepted date supplied by the author (2026-10-31),,2026-07-23,
-lee2026reliable,,,https://doi.org/10.1002/adma.74035,Full author list (11) checked via Crossref record of the DOI 2026-10-30; Accepted 2026-06-25 per Crossref assertion,"Lee, Yunho; Kwon, Yongjun; Noh, Juhyeong; Kang, Seok Hun; Kang, Kyubeen; Choi, Junhyeok; Lee, Young-Gi; Choi, Jaecheol; Jin, Hyeong Min; Lee, Yong Min; Kim, Ju Young",2026-06-25,
+key,et_al,date,paperurl,note,authors,accepted,sort_before,doi
+choi2023phase,,,,Accepted date supplied by the author (2026-10-31),,2023-10-18,,10.1063/5.0179804
+zou2024optimal,,,,Accepted 15 May 2024 per RSC article PDF,,2024-05-15,,10.1039/D4EE00794H
+kim2025mechanical,,,,Accepted 2025-05-11 per Crossref assertion,,2025-05-11,,10.1002/cey2.70046
+lim2026digital,,,,"Accepted date unknown. Received 30 Jun 2025, revised 28 Oct 2025 (author), so accepted after 28 Oct 2025; author states it precedes the Nature Nanotechnology paper",,,park2026nanostructured,10.1002/smll.202507883
+park2026nanostructured,,,https://doi.org/10.1038/s41565-025-02092-y,Full author list (14) checked on the Nature page 2026-10-30; Accepted 30 Oct 2025 per Nature article page,"Park, Nam-Yung; Park, Geon-Tae; Ryu, Ji-Hyun; Park, Seong-Eun; Kim, Jae-Ho; Lee, Seung-Yong; Choi, Junhyeok; Lee, Yong Min; Kim, Min Gyu; Lee, Heebeom; Cline, Joseph P.; Liu, Zhao; Jung, Hun-Gi; Sun, Yang-Kook",2025-10-30,,10.1038/s41565-025-02092-y
+oh2026bimodal,,,https://doi.org/10.1021/acsenergylett.5c03923,Full author list (17) checked via Crossref record of the DOI 2026-10-30; Accepted date supplied by the author (2026-10-31),"Oh, Hyeonseong; Jeong, Uigyeong; Choi, Junhyeok; Lim, Jaejin; Kim, Jun Tae; Shin, Hyeon-Ji; Im, Jong-yeon; Gong, Hyun-Woo; Ahn, Jae-Pyoung; Lee, Yong Min; Kim, Jongsoon; Mun, Junyoung; Chung, Kyung Yoon; Oh, Si Hyoung; Lee, Jong-Won; Lee, Sang-Young; Jung, Hun-Gi",2026-01-13,,10.1021/acsenergylett.5c03923
+kim2026dry,,,,Accepted date supplied by the author (2026-10-31),,2026-09-08,,10.1002/ece2.70134
+choi2026thermally,,,,Accepted date supplied by the author (2026-10-31),,2026-07-23,,10.1016/j.cej.2026.179857
+lee2026reliable,,,https://doi.org/10.1002/adma.74035,Full author list (11) checked via Crossref record of the DOI 2026-10-30; Accepted 2026-06-25 per Crossref assertion,"Lee, Yunho; Kwon, Yongjun; Noh, Juhyeong; Kang, Seok Hun; Kang, Kyubeen; Choi, Junhyeok; Lee, Young-Gi; Choi, Jaecheol; Jin, Hyeong Min; Lee, Yong Min; Kim, Ju Young",2026-06-25,,10.1002/adma.74035

@@ -187,6 +187,11 @@ def main():
             "venue: %s" % yaml_single(venue),
             "pub_no: %d" % pub_no[key],
         ]
+        if ov.get("doi"):
+            doi = ov["doi"].strip()
+            if not re.fullmatch(r"10\.\d{4,9}/\S+", doi):
+                sys.exit("doi for %s must look like 10.xxxx/...: %r" % (key, doi))
+            lines.append("doi: %s" % yaml_single(doi))
         if ov.get("paperurl"):
             lines.append("paperurl: %s" % yaml_single(ov["paperurl"]))
         lines += ["citation: %s" % yaml_single(citation), "---", ""]
