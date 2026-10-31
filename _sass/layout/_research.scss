@@ -59,8 +59,30 @@ h1, h2, h3, h4, h5, h6 {
           backdrop-filter: blur(10px);
 }
 
-.masthead__menu-item {
+.masthead__menu-item,
+.greedy-nav,
+.greedy-nav button {
   background-color: transparent;
+  background: transparent;
+}
+
+/* slightly larger menu text */
+.greedy-nav .visible-links a {
+  font-size: 1.1rem;
+}
+
+/* slightly larger sidebar (author profile) text; the base theme uses 0.75em */
+.sidebar p,
+.sidebar li {
+  font-size: 0.875em;
+}
+
+.sidebar .author__name {
+  font-size: 1.15em;
+}
+
+.author__bio {
+  line-height: 1.5;
 }
 
 .masthead__menu-item.selected a,
