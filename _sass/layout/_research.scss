@@ -205,16 +205,16 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ==========================================================================
    PUBLICATIONS LIST TEXT SIZE
-   Paper titles (with their numbers) 14px; the lines under each title
-   ("Published in ..." and the recommended citation) 11px.
+   Paper titles (with their numbers) 18px; the lines under each title
+   ("Published in ..." and the recommended citation) 14px.
    The Publications page has no .page__content wrapper, so the rules hang
    off .archive instead.
    ========================================================================== */
 
 .archive .archive__item-title {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .archive .archive__item p {
-  font-size: 11px;
+  font-size: 14px;
 }
