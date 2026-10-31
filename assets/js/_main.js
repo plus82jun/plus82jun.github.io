@@ -14,9 +14,10 @@ const browserPref = window.matchMedia && window.matchMedia('(prefers-color-schem
 
 // Determine the computed theme, which can be "dark" or "light".
 function determineComputedTheme() {
-  // Determine the expected state of the theme toggle, which can be "dark", "light", or default "system"
+  // Determine the expected state of the theme toggle, which can be "dark", "light", or "system".
+  // Default to "light" so first-time visitors see the light design regardless of OS setting.
   let themeSetting = localStorage.getItem("theme");
-  themeSetting = (themeSetting != "dark" && themeSetting != "light" && themeSetting != "system") ? "system" : themeSetting;
+  themeSetting = (themeSetting != "dark" && themeSetting != "light" && themeSetting != "system") ? "light" : themeSetting;
 
   // Return the setting if set, or use the browser preference
   if (themeSetting != "system") {
@@ -141,11 +142,12 @@ $(document).ready(function () {
   const scssLarge = 925;          // pixels, from /_sass/_themes.scss
   const scssMastheadHeight = 70;  // pixels, from the current theme (e.g., /_sass/theme/_default.scss)
 
-  // If the user hasn't chosen a theme, follow the OS preference
+  // If the user hasn't chosen a theme, use the light theme (see determineComputedTheme).
+  // Only follow the OS preference when the stored setting is explicitly "system".
   setTheme();
   window.matchMedia('(prefers-color-scheme: dark)')
         .addEventListener("change", (e) => {
-          if (!localStorage.getItem("theme")) {
+          if (localStorage.getItem("theme") === "system") {
             setTheme(e.matches ? "dark" : "light");
           }
         });

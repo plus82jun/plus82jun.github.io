@@ -1,0 +1,70 @@
+/* ==========================================================================
+   RESEARCH LOOK
+   Soft blue-white background with a faint graph-paper grid that fades out
+   toward the page body, plus a translucent masthead. Colors come from the
+   theme files; the extras below are defined for both light and dark.
+   ========================================================================== */
+
+:root {
+  --global-heading-color : #14304d;
+  --global-grid-color    : rgba(27, 109, 143, 0.07);
+  --global-glow-color    : rgba(86, 160, 200, 0.18);
+  --global-masthead-bg   : rgba(245, 248, 252, 0.86);
+}
+
+html[data-theme="dark"] {
+  --global-heading-color : #f1f6fb;
+  --global-grid-color    : rgba(120, 180, 215, 0.07);
+  --global-glow-color    : rgba(60, 130, 180, 0.20);
+  --global-masthead-bg   : rgba(15, 27, 42, 0.86);
+}
+
+body {
+  background-image:
+    radial-gradient(900px 420px at 88% -60px, var(--global-glow-color), transparent 70%),
+    radial-gradient(700px 360px at 2% 0, var(--global-glow-color), transparent 70%);
+  background-repeat: no-repeat;
+}
+
+/* graph-paper grid, only across the top of the page */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 520px;
+  z-index: -1;
+  pointer-events: none;
+  background-image:
+    linear-gradient(var(--global-grid-color) 1px, transparent 1px),
+    linear-gradient(90deg, var(--global-grid-color) 1px, transparent 1px);
+  background-size: 32px 32px;
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, transparent 100%);
+          mask-image: linear-gradient(to bottom, #000 0%, transparent 100%);
+}
+
+::selection {
+  background: rgba(27, 109, 143, 0.2);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--global-heading-color);
+}
+
+/* masthead: translucent so the grid shows through */
+.masthead {
+  background: var(--global-masthead-bg);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.masthead__menu-item {
+  background-color: transparent;
+}
+
+.masthead__menu-item.selected a,
+.masthead__menu-item.selected a:hover {
+  color: var(--global-heading-color);
+  border-bottom-color: var(--global-base-color);
+}
