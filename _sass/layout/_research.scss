@@ -137,6 +137,39 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* About text and Research Interests tags below the photo/history block */
+.intro__about {
+  margin-top: 2.5em;
+
+  h2 {
+    margin-top: 1.5em;
+  }
+
+  h2:first-child {
+    margin-top: 0;
+  }
+}
+
+.intro__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    margin: 0;
+    padding: 0.25em 0.85em;
+    border: 1px solid var(--global-border-color);
+    border-radius: 999px;
+    background: var(--global-thead-color);
+    color: var(--global-heading-color);
+    font-size: 0.95em;
+    line-height: 1.4;
+  }
+}
+
 /* narrow screens: photo above, history below */
 @media screen and (max-width: 600px) {
   .intro {
