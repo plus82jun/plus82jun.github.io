@@ -13,13 +13,9 @@ author_profile: true
 
 ## History
 
-<!--
-  Add history entries below, newest first or oldest first, one line each.
-  Example format (remove the comment markers to use):
-
-  - **2020.03 – 2024.02** Institution, degree
-  - **2024.03 – present** Institution, position
--->
+- **2024 – present** Yonsei University, Department of Battery Engineering. Ph.D. student (battery simulation)
+- **2023 – 2024** Daegu Gyeongbuk Institute of Science and Technology (DGIST), Department of Energy Science and Engineering. M.S. student, advised by Prof. Yong Min Lee (battery simulation)
+- **2017 – Mar. 2023** Kyungpook National University, School of Mechanical Engineering. Undergraduate research intern with Prof. Sung Yeol Kim (battery simulation)
 
   </div>
 </div>
