@@ -13,9 +13,10 @@ author_profile: true
 
 <!-- New style rendering if publication categories are defined -->
 {% if site.publication_category %}
+  {% assign pubs_by_no = site.publications | sort: "pub_no" %}
   {% for category in site.publication_category  %}
     {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
+    {% for post in pubs_by_no %}
       {% if post.category != category[0] %}
         {% continue %}
       {% endif %}
@@ -27,7 +28,8 @@ author_profile: true
     {% endfor %}
   {% endfor %}
 {% else %}
-  {% for post in site.publications reversed %}
+  {% assign pubs_by_no = site.publications | sort: "pub_no" %}
+  {% for post in pubs_by_no %}
     {% include archive-single.html %}
   {% endfor %}
 {% endif %}

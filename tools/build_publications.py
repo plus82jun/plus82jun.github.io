@@ -115,6 +115,29 @@ def main():
     for k in sorted(unknown):
         print("WARNING: overrides row '%s' matches no paper (typo or removed paper?)" % k)
 
+    # Number papers in order of acceptance (1 = accepted first). The accepted date comes from
+    # the overrides file. A paper with an unknown date can use sort_before=<key> to be placed
+    # immediately before that paper. Any other paper without a date stops the build.
+    sort_keys = {}
+    for key, r, title, year in entries:
+        ov = overrides.get(key, {})
+        acc, before = ov.get("accepted", ""), ov.get("sort_before", "")
+        if acc:
+            if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", acc):
+                sys.exit("accepted for %s must be YYYY-MM-DD: %r" % (key, acc))
+            sort_keys[key] = (acc, 1)
+    for key, r, title, year in entries:
+        ov = overrides.get(key, {})
+        before = ov.get("sort_before", "")
+        if key in sort_keys:
+            continue
+        if before and before in sort_keys:
+            sort_keys[key] = (sort_keys[before][0], 0)
+        else:
+            sys.exit("No accepted date (or valid sort_before) for %s in %s" % (key, args.overrides))
+    ordered = sorted((e[0] for e in entries), key=lambda k: (sort_keys[k], [e[0] for e in entries].index(k)))
+    pub_no = {k: i + 1 for i, k in enumerate(ordered)}
+
     out_dir.mkdir(parents=True, exist_ok=True)
     for old in out_dir.glob("*.md"):
         old.unlink()
@@ -162,12 +185,13 @@ def main():
             "permalink: /publication/%s-%s" % (date, key),
             "date: %s" % date,
             "venue: %s" % yaml_single(venue),
+            "pub_no: %d" % pub_no[key],
         ]
         if ov.get("paperurl"):
             lines.append("paperurl: %s" % yaml_single(ov["paperurl"]))
         lines += ["citation: %s" % yaml_single(citation), "---", ""]
         (out_dir / ("%s-%s.md" % (date, key))).write_text("\n".join(lines), encoding="utf-8")
-        print("%s  %s%s" % (date, key, "  [et al.]" if truncated else ""))
+        print("#%d  %s  %s%s" % (pub_no[key], date, key, "  [et al.]" if truncated else ""))
 
     print("Wrote %d files to %s" % (len(entries), out_dir))
 
