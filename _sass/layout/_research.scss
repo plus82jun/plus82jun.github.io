@@ -148,6 +148,12 @@ h1, h2, h3, h4, h5, h6 {
   h2:first-child {
     margin-top: 0;
   }
+
+  /* justified (both-edge aligned) text */
+  p {
+    text-align: justify;
+    text-justify: inter-word;
+  }
 }
 
 .intro__tags {
