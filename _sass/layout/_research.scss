@@ -202,3 +202,17 @@ h1, h2, h3, h4, h5, h6 {
             transform: translate3d(-3cm, 0, 0);
   }
 }
+
+/* ==========================================================================
+   PUBLICATIONS LIST TEXT SIZE
+   Paper titles (with their numbers) 12px; the lines under each title
+   ("Published in ..." and the recommended citation) 10px.
+   ========================================================================== */
+
+.archive__item-title {
+  font-size: 12px;
+}
+
+.page__content .archive__item p {
+  font-size: 10px;
+}
