@@ -95,3 +95,71 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--global-heading-color);
   border-bottom-color: var(--global-base-color);
 }
+
+/* ==========================================================================
+   INTRODUCTION PAGE: photo on the left, history on the right
+   ========================================================================== */
+
+.intro {
+  display: flex;
+  align-items: flex-start;
+  gap: 2em;
+}
+
+.intro__photo {
+  flex: 0 0 200px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(20, 48, 77, 0.15);
+  }
+}
+
+.intro__history {
+  flex: 1 1 auto;
+  min-width: 0;
+
+  h2 {
+    margin-top: 0;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  li {
+    margin-bottom: 0.6em;
+    line-height: 1.5;
+  }
+}
+
+/* narrow screens: photo above, history below */
+@media screen and (max-width: 600px) {
+  .intro {
+    flex-direction: column;
+  }
+
+  .intro__photo {
+    flex-basis: auto;
+    width: 200px;
+    max-width: 100%;
+  }
+}
+
+/* ==========================================================================
+   AUTHOR PROFILE POSITION
+   Move the left profile block (name, bio, links) 3 cm to the left on every
+   page. Only on wide screens: below this width the page has less than 3 cm of
+   free space on the left, and the block would be cut off by the window edge.
+   ========================================================================== */
+
+@media screen and (min-width: 1520px) {
+  .sidebar {
+    -webkit-transform: translate3d(-3cm, 0, 0);
+            transform: translate3d(-3cm, 0, 0);
+  }
+}
