@@ -31,7 +31,7 @@ title or first author changes in a later export. The script warns about override
 
 ## Numbering
 
-The script writes `pub_no` into each paper and the Publications page lists papers by `pub_no` ascending with the number shown before the title. A new paper needs an `accepted` date (or `sort_before`) in the overrides file; otherwise the build stops.
+The script writes `pub_no` into each paper and the Publications page lists papers by `pub_no` descending (newest accepted first) with the number shown before the title. A new paper needs an `accepted` date (or `sort_before`) in the overrides file; otherwise the build stops.
 
 ## Notes
 
