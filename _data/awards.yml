@@ -1,0 +1,19 @@
+# Awards shown on the Awards page (_pages/awards.md).
+# Entries are numbered 1, 2, 3 ... in the order they appear here, and the grid
+# shows them in this order. Add each new award at the bottom of the file.
+#
+# Fields
+#   title        award name
+#   org          awarding organization
+#   date         date to display (free text, e.g. "October 31, 2024")
+#   description  one or two sentences shown in the pop-up (optional)
+#   image        full-size certificate image, shown in the pop-up
+#   thumb        small version of the image, shown in the grid
+# Put images in images/awards/ with EXIF/XMP metadata removed.
+
+- title: "Excellent Paper Presentation Award"
+  org: "The Korean Society of Industrial and Engineering Chemistry (KSIEC)"
+  date: "October 31, 2024"
+  description: "Awarded for the poster presentation \"Digital-Twin Simulation for a Comprehensive Analysis of Silicon/Graphite Composite Electrodes\" at the 2024 KSIEC Fall Meeting."
+  image: /images/awards/2024-ksiec-excellent-paper.jpg
+  thumb: /images/awards/2024-ksiec-excellent-paper-thumb.jpg
