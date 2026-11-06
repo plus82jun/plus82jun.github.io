@@ -21,7 +21,7 @@ author_profile: true
 
 <div class="intro__about">
   <h2>About</h2>
-  <p>I study batteries through simulation. My work covers conventional lithium-ion batteries (LIBs) as well as next-generation systems such as lithium-metal and all-solid-state batteries. I mainly develop digital twin-based simulations, in which real-world structures are reconstructed in a virtual environment and analyzed with multiphysics models. I have worked on battery simulation since my undergraduate years, analyzing systems across multiple length scales, from a single active-material particle to the cell.</p>
+  <p>I develop microstructure-resolved digital twins of lithium-ion, lithium-metal, and all-solid-state batteries. These models couple realistic electrode architectures with multiphysics descriptions of ion transport, reaction kinetics, and mechanics. I use them to investigate how microstructure governs performance and degradation, from individual particles to full cells.</p>
   <h2>Research Interests</h2>
   <ul class="intro__tags">
     <li>Lithium-ion battery</li>
