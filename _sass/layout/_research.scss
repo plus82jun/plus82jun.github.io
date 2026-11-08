@@ -190,7 +190,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
-   INTRODUCTION PAGE: Research (Research Area / Research Technology)
+   RESEARCH PAGE (Research Area / Research Technology)
    Research Area: figure on the left, text on the right, stacked vertically.
    Research Technology: one wide figure on top, text below, stacked vertically.
    Figures are empty placeholders for now (16:9 and 21:9 boxes via padding).
@@ -200,14 +200,14 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 2.5em;
 
   > h2 {
-    margin-top: 0;
-  }
-
-  > h3 {
     margin: 1.8em 0 0.8em;
   }
 
-  h4 {
+  > h2:first-child {
+    margin-top: 0;
+  }
+
+  h3 {
     margin: 0 0 0.4em;
     font-size: 1.05em;
   }
