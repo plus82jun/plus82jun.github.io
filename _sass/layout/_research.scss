@@ -190,6 +190,102 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
+   INTRODUCTION PAGE: Research (Research Area / Research Technology)
+   Research Area: figure on the left, text on the right, stacked vertically.
+   Research Technology: one wide figure on top, text below, stacked vertically.
+   Figures are empty placeholders for now (16:9 and 21:9 boxes via padding).
+   ========================================================================== */
+
+.research {
+  margin-top: 2.5em;
+
+  > h2 {
+    margin-top: 0;
+  }
+
+  > h3 {
+    margin: 1.8em 0 0.8em;
+  }
+
+  h4 {
+    margin: 0 0 0.4em;
+    font-size: 1.05em;
+  }
+
+  p {
+    margin: 0;
+    line-height: 1.6;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+}
+
+.research__figure {
+  position: relative;
+  width: 100%;
+  height: 0;
+  border: 1px dashed var(--global-border-color);
+  border-radius: 4px;
+  background: var(--global-thead-color);
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.research-area {
+  display: flex;
+  align-items: center;
+  gap: 1.8em;
+  margin-bottom: 1.8em;
+}
+
+.research-area__figure {
+  flex: 0 0 280px;
+  width: 280px;
+  padding-top: 157px; /* 16:9 */
+}
+
+.research-area__text {
+  flex: 1 1 auto;
+  min-width: 0;
+
+  /* narrow column: justified text leaves large word gaps */
+  p {
+    text-align: left;
+  }
+}
+
+.research-tech {
+  margin-bottom: 2.2em;
+}
+
+.research-tech__figure {
+  padding-top: 42.86%; /* 21:9 */
+  margin-bottom: 0.9em;
+}
+
+@media screen and (max-width: 600px) {
+  .research-area {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.9em;
+  }
+
+  .research-area__figure {
+    flex-basis: auto;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 */
+  }
+}
+
+/* ==========================================================================
    AUTHOR PROFILE POSITION
    Move the left profile block (name, bio, links) 3 cm to the left on every
    page. Only on wide screens: below this width the page has less than 3 cm of
